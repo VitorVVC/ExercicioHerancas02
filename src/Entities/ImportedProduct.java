@@ -3,7 +3,7 @@ package Entities;
 public class ImportedProduct extends Product {
 
     // Classe customsFee que herda produtos
-    // Possui o preço cu
+    // Possui o preço customsFee
     private Double customsFee;
     // Construtor da classe filha
     public ImportedProduct(String name, Double price, Double customsFee) {
@@ -15,7 +15,7 @@ public class ImportedProduct extends Product {
     public String priceTag() {
         return String.format("%s $ %.2f (Customs fee: $%.2f)", getName(), getPrice(), customsFee);
     }
-    // Get & Set de customsFee 
+    // Get & Set de customsFee
     public Double getCustomsFee() {
         return customsFee;
     }
